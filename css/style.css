@@ -1,3 +1,28 @@
 body {
     background-color: tan;
 }
+.name_input {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    
+}
+body {display: flex; flex-direction: column;}
+
+body > * {margin-bottom: 1em}
+
+section > button {margin: 0 auto; display: block; margin-top: 2em;}
+
+.dark {background-color: orange;}
+
+@media (min-width:600px) {
+    header {
+        display: flex; align-items: center; justify-content:space-between;
+    }
+    .name_input {
+        display: flex; justify-content: space-between; align-items: center;
+    }
+    .students {
+        display:flex; justify-content: space-around;
+    }
+}
